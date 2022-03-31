@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The Brain: Your Roll</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <p id="positiveFeedback" class="firstLine">Good answer!</p>
+   <!-- <p id="needToRoll" class = "secondLine">You need to roll a __ or above.</p>-->
+    <div class="theRoll" id="rollDiv">
+      <img src="/images/20SidedDie.png" alt="die" class="dieImg">
+      <p id="roll" class = "thirdLine">Your roll: (+ num)</p>
+    </div >
+   <!-- <p id="passFail" class="fourthLine">You Passed! || You Failed.</p>-->
+    <p class="fourPointFive" id="pointsAdded">(+--Points)</p>
+   
+    <p id= "bestAnswer" class = "fifthLine">
+      Open website on bar above viewing window for program to work correctly.
+    </p>
+    <div class="nxtLevel">
+    <button onClick="nextPage()" class="nxtLevel">Next</button>
+    </div>
+    <script>
+      //can be deleted later
+      //======================================================
+      //setPoints();
+      console.log(localStorage.getItem("choice"));
+      console.log(localStorage.getItem("numPoints"));
+       function nextPage(){
+         if(localStorage.getItem('level')<9)
+         {
+           localStorage.setItem("choice", null);
+           switchPage('situation.html', true);
+           }
+            else {
+              switchPage('endPage.html');
+            }
+            }
+
+      
+    </script>
+    <script src="rollInfo.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
