@@ -1,0 +1,154 @@
+<!--this file and css file edited-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The Brain: Select</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div>
+      <p id= "problem" class="problem">
+         Open website on bar above viewing window for program to work correctly.
+      <p class="selectPgTxt">Choose Which Section of the Brain to Activate:</p>
+    </div>
+
+    <div>
+      <!---Cerebral Cortex -->
+
+      <p class=" section">Cerebral Cortex</p>
+
+      <!--occipital lobe--->
+      <div>
+        <p class="brainLabel columnOne">Occipital Lobe</p>
+        <img
+          src="/images/Occipital.jpg"
+          alt="Occipital Lobe"
+          onClick="setChoice('occipital')"
+          id="occipital"
+          class = "selectImgs"
+        />
+      </div>
+
+      <!--temporal lobe--->
+      <div>
+        <p class="brainLabel columnTwo">Temporal Lobe</p>
+        <img
+          src="/images/Temporal.jpg"
+          alt="Temporal Lobe"
+          onClick="setChoice('temporal')"
+          id="temporal"
+          class = "selectImgs"
+        />
+      </div>
+
+      <!--frontal lobe--->
+      <div>
+        <p class="brainLabel columnThree">Frontal Lobe</p>
+        <img
+          src="/images/Frontal.jpg"
+          alt="Frontal Lobe"
+          onClick="setChoice('frontal')"
+          id="frontal"
+          class = "selectImgs"
+        />
+      </div>
+
+      <!--parietal lobe--->
+      <div>
+        <p class="brainLabel columnFour">Parietal Lobe</p>
+        <img
+          src="/images/Parietal.jpg"
+          alt="Parietal Lobe"
+          onClick="setChoice('parietal')"
+          id="parietal"
+          class = "selectImgs"
+        />
+      </div>
+    </div>
+
+    <!--Limbic System-->
+    <div>
+      <p class=" section">Limbic System</p>
+
+      <!---Amygdala-->
+      <div>
+        <p class="brainLabel columnOne">Amygdala</p>
+        <img
+          src="/images/Amygdala.png"
+          alt="Amygdala"
+          onClick="setChoice('amygdala')"
+          id="amygdala"
+          class = "selectImgs"
+        />
+      </div>
+
+      <!---Hippocampus-->
+      <div>
+        <p class="brainLabel columnTwo">Hippocampus</p>
+        <img
+          src="/images/Hippocampus.png"
+          alt="Hippocampus"
+          onClick="setChoice('hippocampus')"
+          id="hippocampus"
+          class = "selectImgs"
+        />
+      </div>
+
+      <!---Hypothalamus-->
+      <div>
+        <p class="brainLabel columnThree">Hypothalamus</p>
+        <img
+          src="/images/Hypothalamus.png"
+          alt="Hypothalamus"
+          onClick="setChoice('hypothalamus')"
+          id="hypothalamus"
+          class = "selectImgs"
+        />
+      </div>
+    </div>
+
+    <div>
+      <p class=" section">The Old Brain</p>
+      <!---Thalamus-->
+      <div>
+        <p class="brainLabel columnOne">Thalamus</p>
+        <img
+          src="/images/Thalamus.png"
+          alt="Thalamus"
+          onClick="setChoice('thalamus')"
+          id="thalamus"
+          class = "selectImgs"
+        />
+      </div>
+
+      <!---Brainstem-->
+      <div>
+        <p class="brainLabel columnTwo">Brainstem</p>
+        <img
+          src="/images/Medulla.png"
+          alt="Brainstem"
+          onClick="setChoice('brainstem')"
+          id="brainstem"
+          class = "selectImgs"
+        />
+      </div>
+
+      <!---Cerebellum-->
+      <div>
+        <p class="brainLabel columnThree">Cerebellum</p>
+        <img
+          src="/images/Cerrebellum.png"
+          alt="Cerebellum"
+          onClick="setChoice('cerebellum')"
+          id="cerebellum"
+          class = "selectImgs"
+        />
+      </div>
+    </div>
+    <button class="selectBtn" onClick="switchPage('rollInfo.html', false, true)">Select</button>
+    <script src="/script.js"></script>
+  </body>
+</html>
