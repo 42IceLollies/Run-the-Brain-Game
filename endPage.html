@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Brain: End</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <p class = "lineOne">Congratulations!</p>
+    <div class="imOutOfClassNames">
+    <p id="pntReport" class="lineTwo">--/2600 points</p>
+    <p id="crrctAnsrs" class="lineThree">-- correct answers</p>
+    </div>
+    <p class="lineFour">
+     <u> Descriptions of the other parts needed in the presentation:</u> <br>
+      <br>
+      <u> Medulla:</u> The medulla is one of the three parts of the brainstem. It regulates your heartbeat and breathing. <br>
+<br>
+     <u> Cerebral Cortex:</u> The cerebral cortex is the outer layer of the brain consisting of the four main lobes: parietal, occipital, temporal, <br>
+      and frontal. It is the newest section of the brain evolution-wise, giving humans higher reasoning and processing abilities and unique <br>
+      personalities.
+<br>
+<br>
+     <u> Limbic System:</u> The limbic system is deeper inside the brain, older than the cerebral cortex but also younger than the Old Brain. It <br>
+      consists of the amygdala, hippocampus and hypothalamus, giving you rudimentary emotions, the ability to learn and store memories and it has<br>
+      control of your endocrine system to release horomones. <br>
+ <br>
+     <u> Corpus Callosum:</u> The corpus callosum is the connective material between the two halves of your brain. It allows communication between <br>
+      the left side that thinks rationally, processing and applying logic to your experience of the world and the less linear, more feeling <br>right side which gives you imagination and intuition. <br>
+    </p>
+
+    <p class = "lineFive">Brain images from: https://www.koshland-science-museum.org/explore-the-science/interactives/brain-anatomy </p>
+
+    <script>
+      document.getElementById("pntReport").innerHTML = localStorage.getItem("totalPoints") + "/2600 Points Possible";
+      document.getElementById("crrctAnsrs").innerHTML = localStorage.getItem("correctAnswers") + "/10 Answers Correct";
+
+    </script>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
